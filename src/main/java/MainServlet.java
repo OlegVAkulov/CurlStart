@@ -5,11 +5,12 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "MainServlet", value = "/MainServlet")
+//@WebServlet(name = "MainServlet", value = "/MainServlet")
 public class MainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         StartCurlConnectionTimer startCurlConnectionTimer = new StartCurlConnectionTimer();
+        startCurlConnectionTimer.runTimer();
     }
 
     @Override

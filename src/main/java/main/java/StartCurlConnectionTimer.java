@@ -29,7 +29,7 @@ public class StartCurlConnectionTimer extends TimerTask {
     }
 
 
-    public static void main(String[] args) {
+    public  void runTimer() {
         Calendar startDataTime = Calendar.getInstance();
         startDataTime.set(2022, 1, 19, 17, 29);
         Calendar currentTime = Calendar.getInstance();
