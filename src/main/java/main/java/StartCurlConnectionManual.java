@@ -12,7 +12,7 @@ public class StartCurlConnectionManual {
             while (true) { //бесконечно крутим
                 try {
                     URL urlMail = new URL("http://35.203.40.103:8080/mail/run");
-                    URL urlTelegram = new URL("http://34.82.215.213:8080/telegram/run");
+                    URL urlTelegram = new URL("http://34.82.215.213:8080/telegram/run?command=create_pdf");
                     new Curl(urlTelegram);
                     new Curl(urlMail);
                     System.out.println("Lets go!");

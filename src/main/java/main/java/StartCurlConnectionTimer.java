@@ -16,7 +16,7 @@ public class StartCurlConnectionTimer extends TimerTask {
         URL urlTelegram = null;
         try {
             urlMail = new URL("http://35.203.40.103:8080/mail/run");
-            urlTelegram = new URL("http://34.82.215.213:8080/telegram/run");
+            urlTelegram = new URL("http://34.82.215.213:8080/telegram/run?command=create_pdf");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
