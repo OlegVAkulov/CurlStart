@@ -1,3 +1,5 @@
+package main.java;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,8 +21,8 @@ public class StartCurlConnectionTimer extends TimerTask {
             e.printStackTrace();
         }
         try {
-            new Curl(urlMail);
-            new Curl(urlTelegram);
+            new main.java.Curl(urlMail);
+            new main.java.Curl(urlTelegram);
         } catch (IOException e) {
             e.printStackTrace();
         }
