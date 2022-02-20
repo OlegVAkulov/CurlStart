@@ -37,10 +37,10 @@ public class StartCurlConnectionTimer extends TimerTask {
 
         TimerTask timerTask = new StartCurlConnectionTimer();
         Timer timer = new Timer();
-        if (currentTime.getTime().compareTo(startDataTime.getTime()) < 0) {
-            Date date = new Date();
-            startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);
-        }
+//        if (currentTime.getTime().compareTo(startDataTime.getTime()) < 0) {
+//            Date date = new Date();
+//            startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);
+//        }
         timer.scheduleAtFixedRate(timerTask, startDataTime.getTimeInMillis() - currentTime.getTimeInMillis(), 24 * 60 * 60 * 1000);
     }
 }

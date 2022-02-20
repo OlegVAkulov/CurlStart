@@ -5,6 +5,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <p>Hello world!</p>
   </body>
 </html>
